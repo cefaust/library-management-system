@@ -22,7 +22,7 @@ Books.init(
             type: DataTypes.STRING,
             allowNull: false,
             defaultValue: DataTypes.NOW,
-          },
+          },                                                                                                                        
           category: {
             type: DataTypes.STRING,
             references: {

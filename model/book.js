@@ -34,4 +34,7 @@ Books.init(
             type: DataTypes.STRING,
           },   
     }
-)
+);
+
+
+module.exports = Books;

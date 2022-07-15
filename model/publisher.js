@@ -18,7 +18,7 @@ publisher.init(
     },
     publisher_name: {
       type: DataTypes.STRING,
-    }
+    },
   },
   {
     sequelize,

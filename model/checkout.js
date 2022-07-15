@@ -7,15 +7,46 @@ class Checkout extends Model {}
 
 Checkout.init (
     {
-        // id referencing books
-        // and title
-//-----------------------------------
-    // returnDate
-    // checkoutDate
-//-----------------------------------
-    // fine
-    // ammount
+        id : {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,  
+        },
+        user_id: {
+            type: DataTypes.INT,
+            references: {
+                model: 'user',
+                key: 'id',
+            } ,             
+        },
+        book_id: {
+            type: DataTypes.INT,
+            references: {
+                model: 'books',
+                key: 'id',
+              },
+          },
+          title: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
+          checkoutDate: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
+          returnDate: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
+          fine: {
+            type: DataTypes.INT,
+            allowNull: false,
+          },
+          },
 
-    }
-)
+       
 
+);
+
+module.exports = Checkout;

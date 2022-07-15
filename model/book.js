@@ -19,7 +19,8 @@ Books.init(
             type: DataTypes.INTEGER,
           },
           stock: {
-            type: DataTypes.STRING,
+            type: DataTypes.BOOLEAN,
+            // figure out how to include ammount
             allowNull: false,
             defaultValue: DataTypes.NOW,
           },                                                                                                                        

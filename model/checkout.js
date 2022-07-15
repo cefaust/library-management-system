@@ -7,7 +7,7 @@ class Checkout extends Model {}
 
 Checkout.init (
     {
-        id : {
+        id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,

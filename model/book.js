@@ -24,10 +24,10 @@ Books.init(
             allowNull: false,
             defaultValue: DataTypes.NOW,
           },                                                                                                                        
-          category: {
+          catergory: {
             type: DataTypes.STRING,
             references: {
-                model: 'category',
+                model: 'categories',
                 key: 'id',
               },
           },

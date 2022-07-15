@@ -33,7 +33,12 @@ Books.init(
           },
           comments: {
             type: DataTypes.STRING,
-          },   
+          },
+          sequelize,
+          timestamps: false,
+          freezeTableName: true,
+          underscored: true,
+          modelName: 'books',   
     }
 );
 

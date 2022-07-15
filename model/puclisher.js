@@ -1,8 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection.js');
+const book = require('../model/book.js')
+const category = require('../model/category.js')
 
 class publisher extends Model {}
+
+
 
 publisher.init(
   {

@@ -19,20 +19,26 @@ Books.init(
             type: DataTypes.INTEGER,
           },
           stock: {
-            type: DataTypes.STRING,
+            type: DataTypes.BOOLEAN,
+            // figure out how to include ammount
             allowNull: false,
             defaultValue: DataTypes.NOW,
-          },
-          category: {
+          },                                                                                                                        
+          catergory: {
             type: DataTypes.STRING,
             references: {
-                model: 'category',
+                model: 'categories',
                 key: 'id',
               },
           },
           comments: {
             type: DataTypes.STRING,
-          },   
+          },
+          sequelize,
+          timestamps: false,
+          freezeTableName: true,
+          underscored: true,
+          modelName: 'books',   
     }
 );
 

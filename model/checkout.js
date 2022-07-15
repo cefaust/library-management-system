@@ -4,7 +4,7 @@ const User = require('./User');
 const Books = require('./Books');
 
 class Checkout extends Model {}
-
+// test
 Checkout.init (
     {
         id: {

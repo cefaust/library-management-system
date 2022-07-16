@@ -1,0 +1,37 @@
+[
+    {
+      "title": "American Elf (Book 2)",
+      "ISBN": "978-1-891830-85-3",
+      "stock": "2",
+      "category": "1",
+      "author": "James Kochalka",
+      "publisher" : "Top Shelf Productions"
+    },
+    {
+        "title": "Animal Stories",
+        "ISBN": "978-1-60309-502-0",
+        "stock": "3",
+        "category": "2",
+        "author": "Maria Hoey and Peter Hoey",
+        "publisher" : "Simon & Schuster"
+      },
+      {
+        "title": "To Kill a Mockingbird",
+        "ISBN": "9780060173227",
+        "stock": "password12345",
+        "category": "3",
+        "author": "Harper Lee",
+        "publisher" : "HarperCollins Publishers"
+      },
+      {
+        "title": "Where the Sidewalk Ends",
+        "ISBN": "9780060256678",
+        "stock": "3",
+        "category": "4" ,
+        "author": "Shel Silverstein",
+        "publisher" : "Harper & Row"
+      }
+
+    
+  ]
+

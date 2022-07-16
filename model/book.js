@@ -24,15 +24,20 @@ Books.init(
             allowNull: false,
             defaultValue: DataTypes.NOW,
           },                                                                                                                        
-          catergory: {
-            type: DataTypes.STRING,
+          category: {
+            type: DataTypes.INT,
             references: {
                 model: 'categories',
                 key: 'id',
               },
           },
-          comments: {
+          author: {
             type: DataTypes.STRING,
+            allowNull: false,
+          },
+          publisher: {
+            type: DataTypes.STRING,
+            allowNull: false,
           },
           sequelize,
           timestamps: false,

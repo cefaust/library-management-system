@@ -1,0 +1,22 @@
+{{#each books as |book| }}
+  <div class="row mb-4 project">
+    <div class="col-md-5">
+      <h2>
+        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+        <a href="/book/{{book.id}}">{{book.title}}</a>
+      </h2>
+      <p>
+        <span for="img" aria-label="money">💲</span>
+        <!-- Pass needed_funding value to the helper function -->
+        <span class="dollar-amount">{{book.stock}}</span>
+        needed!
+      </p>
+      <p>Created by {{book.author}}</p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        {{project.publisher}}
+      </p>
+    </div>
+  </div>
+{{/each}}

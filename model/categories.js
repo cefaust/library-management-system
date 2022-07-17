@@ -15,13 +15,13 @@ Categories.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    book_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'book',
-        key: 'id'
-      },
-    },
+    // book_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'book',
+    //     key: 'id'
+    //   },
+    // },
   },
   {
     sequelize,

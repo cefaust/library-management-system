@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Book, Categories} = require('../model');
+const { User, Book, Categories } = require('../model');
 
 router.get('/', async (req,res) => {
   try {
@@ -34,14 +34,12 @@ router.get('/book/:id', async (req, res) => {
       include: [
         {
           model: Categories,
-          attributes: ['category_name'],
+          attributes: ['categoryName'],
         },
       ],
     });
-
-    // res.status(200).json(bookData);
-
     const book = bookData.get({ plain: true });
+    console.log(bookData,'this is bookData');
 
     res.render('book', {
       ...book,
@@ -55,7 +53,7 @@ router.get('/book/:id', async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/');
     return;
   }
 

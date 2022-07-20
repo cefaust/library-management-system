@@ -1,3 +1,44 @@
+
 body {
-    /* background-color: red;; */
+    
+    background-color: rgba(202, 185, 79, 0.557);
+}
+nav{
+    background-color:  rgba(211, 201, 136, 0.529);
+    position: relative;
+}
+nav button{
+    background-color: cyan;
+    color: white;
+    font-size: 40px; 
+    /* margin-left: 880px; */
+    /* margin-top: 10px; */
+    margin: 10px auto;
+    width: 15%;
+    display: block;
+
+}
+h1{
+    background-color:azure;
+    font-size: 60px;
+    text-align: center;
+    padding: 40px;
+    border: 5px solid black ;
+    margin: 25px 100px ;
+}
+.login-form{
+color: blue;
+margin-left: 30px;
+font-size: 30px;
+}
+.signup-form{
+    color: blue;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.login-form button{
+    font-size: 20px;
+}
+.signup-form button{
+    font-size: 20px;
 }

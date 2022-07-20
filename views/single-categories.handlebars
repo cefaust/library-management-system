@@ -1,10 +1,12 @@
+
 <div class="text-center">
   <h2>{{categoryName}}</h2>
-  <p> {{books.1.title}} </p>
-  <p> {{books.1.author}} </p>
-  <p> {{books.1.ISBN}} </p>
+  {{#each books as |book|}}
+  <p> {{book.title}} </p>
+  <p> {{book.author}} </p>
+  <p> {{book.ISBN}} </p>
   <p>
     <button class="btn btn-primary">Checkout {{0.title}}</button>
   </p>
 </div>
-
+  {{/each}}

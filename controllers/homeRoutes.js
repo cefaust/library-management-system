@@ -17,11 +17,12 @@ router.get('/', async (req,res) => {
 
     });
 
+    
     const books = bookData.map((book) => book.get({ plain: true }));
 
     res.render('homepage', {
       books,
-      logged_in: req.session. logged_in,
+      logged_in: req.session.logged_in,
     })
   } catch (err) {
     res.status(500).json(err);

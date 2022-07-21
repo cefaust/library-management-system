@@ -1,12 +1,13 @@
 
-<div class="text-center">
+<div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
   <h2>{{categoryName}}</h2>
   {{#each books as |book|}}
   <p> {{book.title}} </p>
   <p> {{book.author}} </p>
   <p> {{book.ISBN}} </p>
-  <p>
+
     <button class="btn btn-primary">Checkout {{0.title}}</button>
   </p>
-</div>
+<br>
   {{/each}}
+</div>

@@ -1,7 +1,7 @@
 const User = require('./user');
 const Book = require('./book');
 const Categories = require('./categories');
-const Checkout = require('./checkout');
+
 
 User.hasMany(Book, {
     foreignKey: 'user_id',
@@ -28,5 +28,5 @@ User.hasMany(Book, {
     through: 'Checkout'
   });
 
-  module.exports = { User, Book, Categories, Checkout };
+  module.exports = { User, Book, Categories,};
   

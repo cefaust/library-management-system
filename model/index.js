@@ -24,11 +24,9 @@ User.hasMany(Book, {
     through: 'Checkout'
   });
 
-  User.belongsToMany(Book, {
+ User.belongsToMany(Book, {
     through: 'Checkout'
-  })
+  });
 
-
-
-  module.exports = { User, Book, Categories };
+  module.exports = { User, Book, Categories, Checkout };
   

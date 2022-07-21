@@ -6,7 +6,6 @@ const bookData = require('./bookData.json');
 const categoriesData = require('./categoriesData.json');
 
 const seedDatabase = async () => {
-  console.log("seed");
   await sequelize.sync({ force: true });
 
   await User.bulkCreate(userData, {
@@ -15,8 +14,7 @@ const seedDatabase = async () => {
   });
   await Categories.bulkCreate(categoriesData);
 
-  await  Book.bulkCreate(bookData);
-
+  await Book.bulkCreate(bookData);
 
   process.exit(0);
 };

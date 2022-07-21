@@ -1,0 +1,16 @@
+[
+  {
+    "user_id": "1",
+    "book_id": "1",
+    "checkoutDate": "7/1/2022",
+    "returnDate": "7/30/2022",
+    "fine": "0.00"
+  },
+  {
+    "user_id": "1",
+    "book_id": "4",
+    "checkoutDate": "7/19/2022",
+    "returnDate": "8/19/2022",
+    "fine": "0.00"
+  }
+]

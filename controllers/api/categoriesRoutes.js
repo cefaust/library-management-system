@@ -36,7 +36,6 @@ router.get( '/:id', async (req, res) => {
       ],
     });
     const categories = categoriesData.get({ plain: true });
-    console.log(categories);
 
 
     res.render('single-categories', {

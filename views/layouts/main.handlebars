@@ -21,13 +21,14 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-          <a href="/profile">profile</a> |
+           <button><a href="/api/profile">Profile</a></button> |
           <button class="no-button" id="logout">logout</button>
         {{else}}
           <button class="btn btn-light "><a href="/login">Login</a></button>
         {{/if}}
 
           <button class="btn btn-light"><a href="/api/categories">Categories</a></button>
+
       <section id="search_bar" class="my-3 py-4 bg-light">
     <div class="container">
       <form action="/book/title" method="POST">

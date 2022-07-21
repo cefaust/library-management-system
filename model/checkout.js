@@ -27,10 +27,6 @@ Checkout.init (
         key: 'id',
       },
     },
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     checkoutDate: {
       type: DataTypes.STRING,
       allowNull: false,

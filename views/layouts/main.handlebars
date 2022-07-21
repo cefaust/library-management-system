@@ -19,13 +19,13 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-          <a href="/profile">profile</a> |
+           <button><a href="/api/profile">Profile</a></button> |
           <button class="no-button" id="logout">logout</button>
         {{else}}
           <button><a href="/login">Login</a></button>
         {{/if}}
 
-          <button><a href="/api/categories">Categories</a></button>
+          | <button><a href="/api/categories">Categories</a></button>
       <section id="search_bar" class="my-3 py-4 bg-light">
          <input name="searchName" type="text" class="form-control" placeholder="Search Books">
          <div class="col-md-2 p-1">

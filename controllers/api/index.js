@@ -7,7 +7,6 @@ const profileRoutes = require('./profileRoutes');
 router.use('/categories', categoriesRoutes);
 router.use('/users', userRoutes);
 router.use('/profile', profileRoutes);
-// router.use('/book', bookRoutes);
 // router.use('/checkout', checkoutRoutes);
 
 

@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Book, Categories } = require('../model');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req,res) => {
   try {
@@ -60,6 +61,7 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
 
 
 module.exports = router;
